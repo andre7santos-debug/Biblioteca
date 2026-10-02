@@ -21,5 +21,6 @@ from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ConsultaView.as_view(), name='livros'),
+    path('reserva/', ReservaView.as_view(), name='reserva'),
     path('delete/<int:id>/', DeleteLivroView.as_view(), name='delete'),
 ]
